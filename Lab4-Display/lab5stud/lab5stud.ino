@@ -111,6 +111,6 @@ void loop()
           SetSegment(1, j);
           SetSegment(2, k);
           SetSegment(3, l);    
-          delay(10);
+          delay(0);
         }
 }
