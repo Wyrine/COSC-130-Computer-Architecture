@@ -12,8 +12,8 @@ class Stack{
     Stack(){ stack_pointer = stack + STACK_SIZE; }
     void push(int data);
     int pop();
-    int* sp(){ return stack_pointer; };
-    int* st(){ return stack; };
+    int* sp(){ return stack_pointer; }
+    int* st(){ return stack; }
 };
 
 void Stack::push(int data){
