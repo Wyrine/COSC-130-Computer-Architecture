@@ -85,9 +85,10 @@ void flipImage(Pixel *p, int height, int width){
   int index;
   for(int i = 0; i < height; i++)
     for(int j = 0; j < width/2; j++){
-      index = i*width+j;
-      temp = p[index];
-      p[index] = p[i*width+(width-j)-1];
-      p[i*width+(width-j)-1] = temp;
+      index = i*width;
+      temp = p[index+j];
+      p[index+j] = p[index+width-j-1];
+
+      p[index+width-j-1] = temp;
     }
 }
